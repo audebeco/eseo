@@ -24,8 +24,8 @@ public class EleveAdapter extends ArrayAdapter<Eleve> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_user, parent, false);
         }
 
-        TextView tvNom = (TextView) convertView.findViewById(R.id.tvName);
-        TextView tvPrenom = (TextView) convertView.findViewById(R.id.tvMac);
+        TextView tvNom = convertView.findViewById(R.id.tvName);
+        TextView tvPrenom = convertView.findViewById(R.id.tvMac);
 
         tvNom.setText(eleve.nom);
         tvPrenom.setText(eleve.prenom);

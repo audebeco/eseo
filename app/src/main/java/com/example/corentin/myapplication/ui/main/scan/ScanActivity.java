@@ -39,6 +39,7 @@ import android.widget.Toast;
 import com.example.corentin.myapplication.R;
 import com.example.corentin.myapplication.data.model.local.LocalPreferences;
 import com.example.corentin.myapplication.data.model.manager.BluetoothLEManager;
+import com.example.corentin.myapplication.ui.main.action.ActionActivity;
 import com.example.corentin.myapplication.ui.main.scan.adapter.DeviceAdapter;
 
 import java.util.ArrayList;
@@ -254,8 +255,10 @@ public class ScanActivity extends AppCompatActivity {
         public void onServicesDiscovered(final BluetoothGatt gatt, final int status) {
             super.onServicesDiscovered(gatt, status);
             runOnUiThread(() -> {Toast.makeText(ScanActivity.this, "Services discovered with success", Toast.LENGTH_SHORT).show();
-            setUiMode(true);
+
             });
+            startActivity(ActionActivity.getStartIntent(ScanActivity.this));
+
         }
 
         @Override

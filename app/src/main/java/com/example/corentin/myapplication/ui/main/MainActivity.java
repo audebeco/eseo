@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.corentin.myapplication.R;
+import com.example.corentin.myapplication.ui.main.action.ActionActivity;
 import com.example.corentin.myapplication.ui.main.adapter.EleveAdapter;
 import com.example.corentin.myapplication.data.model.Device;
 import com.example.corentin.myapplication.data.model.Eleve;
@@ -86,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void onClick2(View l) {
         Toast.makeText(this, "bonus point", Toast.LENGTH_SHORT).show();
+        startActivity(ActionActivity.getStartIntent(this));
     }
 
 

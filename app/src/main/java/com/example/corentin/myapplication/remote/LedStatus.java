@@ -1,4 +1,4 @@
-package com.example.corentin.myapplication.data.model.manager;
+package com.example.corentin.myapplication.remote;
 
 /**
  * LedStatus model
