@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/eseo"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:src="@drawable/eseo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+    <Button
+        android:id="@+id/commander"
+        android:layout_width="212dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="90dp"
+        android:text="Commander"
+        app:layout_constraintTop_toBottomOf="@+id/eseo"
+        tools:layout_editor_absoluteX="86dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+      />
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="212dp"
+        android:layout_height="60dp"
+        android:text="Scanner les périphériques"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/commander"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+
+
+</android.support.constraint.ConstraintLayout>

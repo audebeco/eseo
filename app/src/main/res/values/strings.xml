@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ESEO SCAN</string>
+    <string name="bonjour_tous">bonjour à tous</string>
+    <string name="hello">romain faque cte ben compiqué</string>
+    <string name="vent">vive le vent</string>
+    <string name="title">alerte infos !</string>
+    <string name="content">les gilets jaunes attaquent l ESEO</string>
+    <string name="agree">oui ça passe</string>
+    <string name="desagree">trivial</string>
+    <string name="bluetooth">nom inconnu</string>
+</resources>
